@@ -1,6 +1,8 @@
 #banner {
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), #005aa7),
     url(../images/1.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), #005aa7),
+    url(../images/1.jpg);
   background: -webkit-gradient(
       linear,
       left top,
@@ -562,11 +564,18 @@ nav ul li a {
 }
 
 .containeri {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .containerinside {
+  -ms-flex-preferred-size: 80%;
   flex-basis: 80%;
   max-width: 1100px;
   width: 100%;
@@ -575,6 +584,7 @@ nav ul li a {
   overflow: hidden;
   overflow-y: scroll;
   background-color: #005aa7;
+  -webkit-box-shadow: 0 10px 20px 3px black;
   box-shadow: 0 10px 20px 3px black;
   color: #fff;
   border-radius: 50px;
@@ -593,6 +603,13 @@ nav ul li a {
   width: 12px;
 }
 ::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    to(#005aa7)
+  );
   background: linear-gradient(transparent, #005aa7);
 }
 .second {
@@ -643,6 +660,8 @@ nav ul li a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), #005aa7),
+    url(../images/1.jpg);
   background: -o-linear-gradient(rgba(0, 0, 0, 0.5), #005aa7),
     url(../images/1.jpg);
   background: -webkit-gradient(
